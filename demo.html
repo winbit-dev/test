@@ -281,26 +281,34 @@ ul { list-style: none; }
     <h2>jQuery slidePage Demos</h2>
     <div class="step step1 fadeIn"></div>
     <div class="step step2 fadeIn"></div>
+				<div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
+				<div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
   </div>
       <div class="item item2">
     <h2>Page2: With Delay</h2>
     <div class="step step1 slideRight" data-delay="1000"></div>
     <div class="step step2 slideLeft" data-delay="1000"></div>
     <div class="step step3 zoomIn" data-delay="1000"></div>
+				<div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
+				<div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
   </div>
       <div class="item item3">
     <h2>Page3: With Lazy Animations</h2>
     <a class="play" href="javascript:slidePage.fire(3)">Play</a>
     <div class="lazy step1 slideUp"></div>
     <div class="lazy step2 slideDown"></div>
+				<div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
+				<div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
   </div>
       <div class="item item4">
     <div class="container">
           <h2>Page4</h2>
           
         </div>
-    <!--<div class="step step1 heartBeat"></div>
-        <div class="step step2 heartBeat"></div>--> 
+    <div class="step step1 heartBeat"></div>
+        <div class="step step2 heartBeat"></div>
+				<div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
+				<div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
   </div>
       <div class="item item5">
     <div>
@@ -308,6 +316,8 @@ ul { list-style: none; }
           <div class="step step1 rollInLeft"></div>
           <div class="step step2 forceDown" data-delay="1000"></div>
           <div class="step step3 fadeFlash infinite" data-delay="1500"></div>
+			<div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
+				<div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
         </div>
   </div>
       <div class="item item6">
@@ -315,11 +325,9 @@ ul { list-style: none; }
     <a href="javascript:slidePage.index(1)" class="goto">Jump To Page1</a> </div>
       
       <nav class="pagination" id="pagination">
-    <div class="prev-page" onclick="slidePage.prev()" style="display: none;"><i class="fa fa-angle-up"></i></div>
     
 				<a onclick="slidePage.index(1)"></a> <a onclick="slidePage.index(2)"></a> <a onclick="slidePage.index(3)"></a> <a onclick="slidePage.index(4)"></a> <a onclick="slidePage.index(5)"></a> <a onclick="slidePage.index(6)"></a>
     
-				<div class="next-page" onclick="slidePage.next()" style="display: none;"><i class="fa fa-angle-down"></i></div>
   </nav>
     </div>
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
