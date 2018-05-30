@@ -315,9 +315,11 @@ ul { list-style: none; }
     <a href="javascript:slidePage.index(1)" class="goto">Jump To Page1</a> </div>
       
       <nav class="pagination" id="pagination">
-    <div class="prev-page" onclick="slidePage.prev()"><i class="fa fa-angle-up"></i></div>
-    <a onclick="slidePage.index(1)"></a> <a onclick="slidePage.index(2)"></a> <a onclick="slidePage.index(3)"></a> <a onclick="slidePage.index(4)"></a> <a onclick="slidePage.index(5)"></a> <a onclick="slidePage.index(6)"></a>
-    <div class="next-page" onclick="slidePage.next()"><i class="fa fa-angle-down"></i></div>
+    <div class="prev-page" onclick="slidePage.prev()" style="display: none;"><i class="fa fa-angle-up"></i></div>
+    
+				<a onclick="slidePage.index(1)"></a> <a onclick="slidePage.index(2)"></a> <a onclick="slidePage.index(3)"></a> <a onclick="slidePage.index(4)"></a> <a onclick="slidePage.index(5)"></a> <a onclick="slidePage.index(6)"></a>
+    
+				<div class="next-page" onclick="slidePage.next()" style="display: none;"><i class="fa fa-angle-down"></i></div>
   </nav>
     </div>
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
